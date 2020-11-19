@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Asteroid/Asteroid_Field.gd" type="Script" id=1]
+
+[node name="Asteroid_Field" type="Node2D"]
+script = ExtResource( 1 )

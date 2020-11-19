@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Gyruss_Music_NESS_EndingTheme.ogg-dd283bcde198378e6d2e17539ee7a5ec.oggstr"
+
+[deps]
+
+source_file="res://audio/Gyruss_sound/Music/Gyruss_Music_NESS_EndingTheme.ogg"
+dest_files=[ "res://.import/Gyruss_Music_NESS_EndingTheme.ogg-dd283bcde198378e6d2e17539ee7a5ec.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

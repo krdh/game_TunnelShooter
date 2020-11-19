@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Sound Effect (30).wav-12a7e4bb4bf0a1deb1e8aeb8587ebbab.sample"
+
+[deps]
+
+source_file="res://audio/Gyruss_sound/sounds/Sound Effect (30).wav"
+dest_files=[ "res://.import/Sound Effect (30).wav-12a7e4bb4bf0a1deb1e8aeb8587ebbab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

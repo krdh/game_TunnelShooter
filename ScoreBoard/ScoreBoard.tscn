@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ScoreBoard/ScoreBoard.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/space-age.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="ScoreBoard" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -914.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+margin_left = 6.36395
+margin_top = 5.44365
+margin_right = 356.364
+margin_bottom = 42.4436
+rect_min_size = Vector2( 350, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "Score: 123456"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Shield" type="Label" parent="."]
+margin_left = 2.77249
+margin_top = 34.435
+margin_right = 352.773
+margin_bottom = 71.435
+rect_min_size = Vector2( 350, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "Shield: 100 %"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Killed" type="Label" parent="."]
+margin_left = 21.8085
+margin_top = 64.8407
+margin_right = 371.809
+margin_bottom = 101.841
+rect_min_size = Vector2( 350, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "Killed: 12345"
+valign = 1

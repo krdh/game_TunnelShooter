@@ -1,0 +1,38 @@
+
+
+  Enemy_Control
+  ┗━Swarm(Node2d)
+	┃
+	┣━Rail(Path2D)
+	┃ ┃
+	┃ ┣━Follower(PathFollow2D)
+	┃ ┃ ┗━Enemy(Node2D)
+	┃ ┃   ┗━Sprite
+	┃ ┃     ┗━Area2D
+	┃ ┃       ┗━CollisionShape2D
+	┃ ┣━Follower(Followpath2D)
+	┃ ┃ ┗━Enemy(Node2D)
+	┃ ┃   ┗━Sprite
+	┃ ┃     ┗━Area2D
+	┃ ┃       ┗━CollisionShape2D
+	┃ ┣━Follower(Followpath2D)
+	┃ ┃ ┗━Enemy(Node2D)
+	┃ ┇   ┗━Sprite
+	┃ ┇     ┗━Area2D
+	┃         ┗━CollisionShape2D
+	┃
+	┣━Rail(Path2D)
+	┃ ┃
+	┃ ┣━Follower(PathFollow2D)
+	┃ ┃ ┗━Enemy(Node2D)
+	┃ ┃   ┗━Sprite
+	┃ ┃     ┗━Area2D
+	┃ ┃       ┗━CollisionShape2D
+	┇ ┇
+	┇
+	
+┇
+┃
+┣━
+┗━
+	

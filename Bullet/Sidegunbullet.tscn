@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Bullet/img/plasmabullet.png" type="Texture" id=1]
+[ext_resource path="res://Bullet/Sidegunbullet.gd" type="Script" id=2]
+
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 26, 63 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 26, 0, 26, 63 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 52, 0, 26, 63 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 78, 0, 26, 63 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 104, 0, 26, 63 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 15.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 6.05412
+height = 21.9641
+
+[node name="Sidegunbullet" type="Node2D"]
+
+[node name="Sidegunbullet_left" type="Area2D" parent="." groups=[
+"Enemy_damager",
+]]
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Sidegunbullet_left"]
+position = Vector2( 0.187286, 20.6017 )
+frames = SubResource( 6 )
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sidegunbullet_left"]
+position = Vector2( -0.187302, 10.868 )
+shape = SubResource( 7 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Sidegunbullet_left"]
+position = Vector2( 0.110016, 20.5988 )
+scale = Vector2( 1.23784, 3.13314 )
+
+[node name="Sidegunbullet_right" type="Area2D" parent="." groups=[
+"Enemy_damager",
+]]
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+script = ExtResource( 2 )
+direction_left = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Sidegunbullet_right"]
+position = Vector2( 0.187286, 20.6017 )
+frames = SubResource( 6 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sidegunbullet_right"]
+position = Vector2( -0.187302, 10.868 )
+shape = SubResource( 7 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Sidegunbullet_right"]
+position = Vector2( 0.110016, 20.5988 )
+scale = Vector2( 1.23784, 3.13314 )
