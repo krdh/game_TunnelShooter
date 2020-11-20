@@ -31,7 +31,7 @@ export var enemywaveconfig = {
 		rail_angle = 0,
 		mirrorwave = true,
 		shiptype   = 0,
-		nrEnemies  = 8,
+		nrEnemies  = 12,
 		speed      = 300,
 		offset     = 100,
 		score      = 1500,
@@ -139,7 +139,7 @@ func statemachine():            #enum {INIT, WAVE, ENEMIESKILLED, NEWWAVEINTRO,E
 		ENEMIESKILLED :
 			print("All enemies destroyed, last ship was nr: "+str(lastenemyship))
 			enemywaveconfig.railnr    = int( randi() % 3 )
-			enemywaveconfig.nrEnemies = int( 2 + 2*randi()%6 )       #even nr
+			enemywaveconfig.nrEnemies = int( 6 + 2*randi()%6 )       #even nr
 			enemywaveconfig.shiptype  = int( randi() % 3 )
 			enemywaveconfig.nrofwaves -= 1
 			if enemywaveconfig.nrofwaves <= 0:

@@ -210,16 +210,16 @@ func on_sig_satoshi(value):
 				playerconfig.aim_laser_enable = true
 				$Line2D.visible = playerconfig.aim_laser_enable
 				popuptext = "Ship Upgrade - Aiming Laser"
-			5000:
+			3000:
 				playerconfig.plasmagun_enable = true
 				popuptext = "Ship Upgrade - Plasmagun (R1)"
-			10000:
+			4000:
 				playerconfig.gunreloadtime = 0.12
 				popuptext = "Ship Upgrade - New Coffee Machine"
-			20000:
+			5000:
 				playerconfig.gunreloadtime = 0.08
 				popuptext = "Ship Upgrade - Faster Reload"	
-			50000:
+			7000:
 				playerconfig.sidegun_enable   = true
 				popuptext = "Ship Upgrade - Side Plasmagun (L1)"
 			100000:

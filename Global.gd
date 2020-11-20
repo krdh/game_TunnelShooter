@@ -39,7 +39,10 @@ func add_satoshi(sat:int):
 	var oldsats = scoreboard.satoshi
 	scoreboard.satoshi += sat
 	if oldsats <   2000 and scoreboard.satoshi >=    2000 : emit_signal("sig_satoshi",   2000) ;
+	if oldsats <   3000 and scoreboard.satoshi >=    3000 : emit_signal("sig_satoshi",   3000) ;
+	if oldsats <   4000 and scoreboard.satoshi >=    4000 : emit_signal("sig_satoshi",   4000) ;
 	if oldsats <   5000 and scoreboard.satoshi >=    5000 : emit_signal("sig_satoshi",   5000) ;
+	if oldsats <   7000 and scoreboard.satoshi >=    7000 : emit_signal("sig_satoshi",   7000) ;
 	if oldsats <  10000 and scoreboard.satoshi >=   10000 : emit_signal("sig_satoshi",  10000) ;
 	if oldsats <  20000 and scoreboard.satoshi >=   20000 : emit_signal("sig_satoshi",  20000) ;
 	if oldsats <  50000 and scoreboard.satoshi >=   50000 : emit_signal("sig_satoshi",  50000) ;
