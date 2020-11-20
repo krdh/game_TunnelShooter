@@ -24,9 +24,11 @@ Currently active:
 
 Todo:
 - Enemy ships need to face path
+- Enemyships need to form formations in center
 - impact explosions for hitting asteroids, rayships
 - impact pushback when player hits asteroid
 - player shields
 - powerups
 - ... juice and pollish ...
 
+![screenshot](https://github.com/krdh/game_TunnelShooter/blob/master/Gamedesign/Screenshot.png)
